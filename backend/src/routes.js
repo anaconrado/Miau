@@ -1,18 +1,23 @@
 const express = require('express');
 
-const routes = express.Routes();
- 
-routes.post('/user', (request, response) => {
-    const body = request.body;
+const DoadorController = require('./controllers/DoadorController');
+const GatoController = require('./controllers/GatoController');
+const ProfileController = require('./controllers/ProfileController');
+const SessionController = require('./controllers/SessionController');
 
-    console.log(body);
+const routes = express.Router();
 
-    return response .json({
-        evento: 'jfodif',
-        aluno: 'Ana'
-    });
-});
+routes.post('/sessions', SessionController.create);
+
+routes.get('/doadores', DoadorController.index);
+routes.post('/doadores', DoadorController.create);
+
+routes.get('/profile', ProfileController.index);
+
+routes.get('/gatos', GatoController.index); 
+routes.post('/gatos', GatoController.create);
+routes.delete('/gatos/:id', GatoController.delete);
 
 module.exports = routes;
 
-
+ 
