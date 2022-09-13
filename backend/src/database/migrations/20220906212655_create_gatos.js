@@ -4,8 +4,9 @@ exports.up = function up(knex) {
 
         table.string('nome').notNullable();
         table.string('idade', 1).notNullable();
+        table.string('sexo').notNullable();
         table.string('informacoes').notNullable();
-        table.string('historia').notNullable();
+        table.string('descricao').notNullable();
 
         table.string('doador_id').notNullable();
 

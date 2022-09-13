@@ -18,14 +18,15 @@ module.exports = {
     },
 
     async create(request, response) {
-        const { nome, idade, informacoes, historia } = request.body;
+        const { nome, idade, sexo, informacoes, descricao } = request.body;
         const doador_id = request.headers.authorization;
 
         const [id] = await connection('gatos').insert({
             nome,
             idade,
+            sexo,
             informacoes,
-            historia,
+            descricao,
             doador_id,
         });
 
