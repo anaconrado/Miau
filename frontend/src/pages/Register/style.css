@@ -1,0 +1,70 @@
+.register-container{
+    width: 100%;
+    max-width: 2240px;
+    height: 100vh;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-container .Miau{
+    width: 100%;
+    max-width: 300px;
+    margin-left: 100px;
+}
+
+.content{
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    padding: 50px;
+    background: #FFFFF4;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-container{
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.left-container h1{
+    margin: 25px 0 32px;
+    font-size: 32px;
+}
+
+.left-container p{
+    font-size: 18px;
+    color: #737380; 
+    line-height: 32px;
+}
+
+.content form{
+    width: 100%;
+    max-width: 550px;
+    margin-left: 10px;
+}
+
+.content form input{
+    margin-top: 8px;
+    width: 98%;
+}
+.content form .input-group1{
+    margin-right: 40px;
+}
+
+.content form .input-group2{
+    display: flex;
+}
+
+.content form .input-group2 input + input{
+    margin-left: 8px;
+}
+
+

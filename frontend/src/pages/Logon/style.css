@@ -1,0 +1,44 @@
+.logon-container {
+    width: 100%;
+    max-width: 2240px;
+    height: 95vh;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Gatos{
+    width: 700px;
+}
+
+.Miau{
+    width: 400px;
+    margin-left: 30px;
+}
+
+.right-container{
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.logon-container form {
+    width: 100%;
+    max-width: 500px;
+}
+
+.logon-container form h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.logon-container .form{
+    margin-left: 70px;
+}
+
+.logon-container form .button{
+    width: 105%;
+}
+
+
